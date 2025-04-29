@@ -81,3 +81,13 @@ a //= 2
 # módulo
 
 a %= 2
+
+# Estructuras de Control
+c = 22
+d = 23
+# Condicionales
+
+if c > d:
+    print("c es mayor que d")
+else:
+    print("c es menor que d")
