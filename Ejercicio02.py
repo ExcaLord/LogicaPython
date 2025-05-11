@@ -29,3 +29,15 @@ while True:
         break
     else:
         print("No Digitaste todos los valores que ocurrio?, intentalo nuevamente!")
+
+def vacia():
+    return None
+
+def sum_three_numbers(a, b, c):
+    return a + b + c
+
+def main():
+    def sum_two_numbers(a,b) :
+        return a + b
+    
+function_inside_function = main(sum_two_numbers(2,3))
