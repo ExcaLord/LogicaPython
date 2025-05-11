@@ -3,12 +3,15 @@
 global_variable = 10
 # Se puede usar la variable global dentro de la funcion
 
+
 def modify_global_variable():
     global global_variable
     # Se puede modificar la variable global dentro de la funcion
     global_variable = 20
 
+
 print(f"Variable global fuera de la funcion: {global_variable}")
+
 
 def nombre():
     nombre = input("Cual es tu nombre? ")
@@ -26,6 +29,7 @@ def nacimiento():
     year = int(input("En que year naciste? "))
     fecha = f"Naciste el {day:02d} {month:02d} {year}"
     return fecha
+
 
 # Ejemplo de while True
 # Se usa para crear un bucle infinito
@@ -48,14 +52,18 @@ while True:
 # No hace nada, solo se define
 # Se puede usar para definir una funcion que no hace nada
 
+
 def vacia():
     return None
+
 
 # Ejemplo funcion varios argumentos
 # Se pueden definir funciones con varios argumentos
 
+
 def sum_three_numbers(a, b, c):
     return a + b + c
+
 
 # Funcion dentro de otra funcion
 # Se pueden definir funciones dentro de otras funciones
@@ -64,14 +72,40 @@ def sum_three_numbers(a, b, c):
 # La funcion interna puede ser devuelta como resultado de la funcion externa
 # En este caso la funcion interna se devuelve como resultado de la funcion externa
 
+
 def main():
-    
-    def sum_two_numbers(a,b) :
+    def sum_two_numbers(a, b):
         return a + b
-    
+
     return sum_two_numbers
 
+
 function_inside_function = main()
-print(function_inside_function(2,3))
+print(function_inside_function(2, 3))
 
 # Ejercicio 1.
+# Crea una función que reciba dos parámetros de tipo cadena de texto y retorne un número.
+# - La función imprime todos los números del 1 al 100. Teniendo en cuenta que:
+# - Si el número es múltiplo de 3, muestra la cadena de texto del primer parámetro.
+# - Si el número es múltiplo de 5, muestra la cadena de texto del segundo parámetro.
+# - Si el número es múltiplo de 3 y de 5, muestra las dos cadenas de texto concatenadas.
+# - La función retorna el número de veces que se ha impreso el número en lugar de los textos.
+
+
+def printNumber(str1, str2):
+    contador_numero = 0
+
+    for number in range(1, 101):
+        if number % 3 == 0 and number % 5 == 0:
+            print(str1 + "" + str2)
+        elif number % 3 == 0:
+            print(str1)
+        elif number % 5 == 0:
+            print(str2)
+        else:
+            print(number)
+            contador_numero += 1
+    return contador_numero
+
+
+print(printNumber("Empanada", "Arepa Rellena"))
