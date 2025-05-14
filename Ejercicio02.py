@@ -83,6 +83,15 @@ def main():
 function_inside_function = main()
 print(function_inside_function(2, 3))
 
+# For Loop
+# Se usa para iterar sobre una secuencia (lista, tupla, diccionario, conjunto o cadena)
+# Se usa para iterar sobre un rango de numeros
+# Se usa para iterar sobre una cadena de texto
+# Se usa para iterar sobre un objeto iterable
+
+for i in range(10):
+    print(1)
+
 # Ejercicio 1.
 # Crea una función que reciba dos parámetros de tipo cadena de texto y retorne un número.
 # - La función imprime todos los números del 1 al 100. Teniendo en cuenta que:
