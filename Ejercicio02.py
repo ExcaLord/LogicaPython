@@ -89,6 +89,7 @@ print(function_inside_function(2, 3))
 # Se usa para iterar sobre una cadena de texto
 # Se usa para iterar sobre un objeto iterable
 
+# Ejemplo de for loop
 for i in range(10):
     print(1)
 
