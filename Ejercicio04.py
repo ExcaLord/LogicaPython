@@ -32,3 +32,9 @@ print(len("Exca Developer"))
 # Quinto podemos tambien obtener la informacion de cierta posicion
 
 print(nombre_completo[2:7])
+print(nombre_completo[2:4:3])
+
+# Sexto tambien podemos convertir todo el texto en mayusculas
+# o Ponerlo todo en minusculas
+print(nombre.upper())
+print(nombre_completo.lower())
